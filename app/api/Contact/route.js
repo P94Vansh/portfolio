@@ -15,6 +15,7 @@ export async function POST(request) {
 
     }
     catch(e){
+        console.log(e.message)
         return  NextResponse.json({success:false},{status:404})
 
     }
