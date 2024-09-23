@@ -42,7 +42,7 @@ export default function Home() {
           transition={{delay:0.4,x:{type:'spring', stiffness:60},opacity:{duration:2},ease:"easeIn",duration:2}} >MERN Stack</motion.div>
           <motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}}
           transition={{delay:0.4,x:{type:'spring', stiffness:60},opacity:{duration:2},ease:"easeIn",duration:2}} >
-          <TypeAnimation  className="md:text-5xl text-xl text-center"
+          <TypeAnimation  className="md:text-5xl text-lg text-center"
             sequence={[
               'Frontend Developer',
               1000,
