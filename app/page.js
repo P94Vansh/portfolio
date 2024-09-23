@@ -35,7 +35,7 @@ export default function Home() {
       <div ref={aboutRef} className="bg-bgImage bg-fixed md:h-[90vh] h-[75vh] opacity-80 flex flex-col-reverse md:flex-row justify-between p-16 items-center gap-4">
         <div className="md:text-5xl text-2xl flex flex-col gap-6 text-white font-serif items-center justify-center">
         <motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}}
-transition={{delay:0.4,x:{type:'spring', stiffness:60},opacity:{duration:2},ease:"easeIn",duration:2}} className="text-center text-lg md:text-8xl whitespace-nowrap">
+transition={{delay:0.4,x:{type:'spring', stiffness:60},opacity:{duration:2},ease:"easeIn",duration:2}} className="text-center text-3xl md:text-8xl whitespace-nowrap">
   Vansh Gambhir
 </motion.div>
 <motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}}
