@@ -11,12 +11,22 @@ export async function POST(request) {
             message:body.message
         })
         await details.save()
-        return NextResponse.json({success:true},{status:200})
+        const response = NextResponse.json({ success: true }, { status: 200 });
+        response.headers.set('Access-Control-Allow-Origin', 'https://portfolio-do03sz39d-p94vanshs-projects.vercel.app');
+        response.headers.set('Access-Control-Allow-Methods', 'POST, OPTIONS');
+        response.headers.set('Access-Control-Allow-Headers', 'Content-Type');
+
+        return response;
 
     }
     catch(e){
-        console.log(e.message)
-        return  NextResponse.json({success:false},{status:404})
+        console.log(e.message);
+        const response = NextResponse.json({ success: false }, { status: 404 });
+        response.headers.set('Access-Control-Allow-Origin', 'https://portfolio-do03sz39d-p94vanshs-projects.vercel.app');
+        response.headers.set('Access-Control-Allow-Methods', 'POST, OPTIONS');
+        response.headers.set('Access-Control-Allow-Headers', 'Content-Type');
+
+        return response;
 
     }
 }
