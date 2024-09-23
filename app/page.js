@@ -34,27 +34,30 @@ export default function Home() {
       </nav>
       <div ref={aboutRef} className="bg-bgImage bg-fixed md:h-[90vh] h-[75vh] opacity-80 flex flex-col-reverse md:flex-row justify-between p-16 items-center gap-4">
         <div className="md:text-5xl text-2xl flex flex-col gap-6 text-white font-serif items-center justify-center">
-          <motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}}
-          transition={{delay:0.4,x:{type:'spring', stiffness:60},opacity:{duration:2},ease:"easeIn",duration:2}}  className="text-center text-3xl md:text-8xl">Vansh Gambhir</motion.div>
-          <motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}}
-          transition={{delay:0.4,x:{type:'spring', stiffness:60},opacity:{duration:2},ease:"easeIn",duration:2}} >Web Developer</motion.div>
-          <motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}}
-          transition={{delay:0.4,x:{type:'spring', stiffness:60},opacity:{duration:2},ease:"easeIn",duration:2}} >MERN Stack</motion.div>
-          <motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}}
-          transition={{delay:0.4,x:{type:'spring', stiffness:60},opacity:{duration:2},ease:"easeIn",duration:2}} className="flex items-center justify-center">
-          <TypeAnimation  className="md:text-5xl text-xs font-semibold text-center"
-            sequence={[
-              'Frontend Developer',
-              1000,
-              'Backend Developer',
-              1000,
-              'Problem Solver',
-              1000,
-            ]}
-            speed={20}
-            repeat={Infinity}
-          />
-          </motion.div>
+        <motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}}
+transition={{delay:0.4,x:{type:'spring', stiffness:60},opacity:{duration:2},ease:"easeIn",duration:2}} className="text-center text-lg md:text-8xl whitespace-nowrap">
+  Vansh Gambhir
+</motion.div>
+<motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}}
+transition={{delay:0.4,x:{type:'spring', stiffness:60},opacity:{duration:2},ease:"easeIn",duration:2}} className="text-center text-lg md:text-3xl whitespace-nowrap">Web Developer</motion.div>
+<motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}}
+transition={{delay:0.4,x:{type:'spring', stiffness:60},opacity:{duration:2},ease:"easeIn",duration:2}} className="text-center text-lg md:text-3xl whitespace-nowrap">MERN Stack</motion.div>
+<motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}}
+transition={{delay:0.4,x:{type:'spring', stiffness:60},opacity:{duration:2},ease:"easeIn",duration:2}} className="text-center text-lg md:text-3xl whitespace-nowrap">
+  <TypeAnimation 
+    sequence={[
+      'Frontend Developer',
+      1000,
+      'Backend Developer',
+      1000,
+      'Problem Solver',
+      1000,
+    ]}
+    speed={20}
+    repeat={Infinity}
+  />
+</motion.div>
+
         </div>
         <div className="overflow-hidden">
         <motion.div className="w-60 md:w-80" initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}}
