@@ -41,8 +41,8 @@ export default function Home() {
           <motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}}
           transition={{delay:0.4,x:{type:'spring', stiffness:60},opacity:{duration:2},ease:"easeIn",duration:2}} >MERN Stack</motion.div>
           <motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}}
-          transition={{delay:0.4,x:{type:'spring', stiffness:60},opacity:{duration:2},ease:"easeIn",duration:2}} >
-          <TypeAnimation  className="md:text-5xl text-center"
+          transition={{delay:0.4,x:{type:'spring', stiffness:60},opacity:{duration:2},ease:"easeIn",duration:2}} className="flex items-center justify-center">
+          <TypeAnimation  className="md:text-5xl text-xs font-semibold text-center"
             sequence={[
               'Frontend Developer',
               1000,
