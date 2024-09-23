@@ -25,7 +25,6 @@ const ContactForm = () => {
             headers: myHeaders,
         });
         let res = await response.json();
-        console.log(res);
         if(res.success==true) {
             success()
         }
