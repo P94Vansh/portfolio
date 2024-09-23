@@ -23,7 +23,6 @@ export async function POST(request) {
             },
         });
     } catch (e) {
-        console.log(e.message);
         return new Response(JSON.stringify({ success: false }), {
             status: 404,
             headers: {
